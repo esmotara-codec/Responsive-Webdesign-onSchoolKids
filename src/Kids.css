@@ -35,7 +35,7 @@
   }
 
   .main-container{
-    max-width: 1960px;
+    max-width: 1700px;
     margin: 0 auto;
   }
 
@@ -84,7 +84,11 @@
   
 }
 
-
+.banner{
+  margin-right: 180px;
+  align-items: center;
+  width: 640px;
+}
 .banner-title{
   
   font-weight: 800px;
@@ -158,7 +162,7 @@
 }
 
 
-@media screen  and (max-width:576px ){
+@media screen  and (max-width:576px){
 
   
 }
