@@ -35,13 +35,17 @@
   }
 
   .main-container{
-    max-width: 1160px;
+    max-width: 1960px;
     margin: 0 auto;
   }
 
 /* NaVbar */
+.nav-container{
+  width: 100%;
+  
+}
   .navbar{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 .navitems{
@@ -56,6 +60,9 @@
     gap: 32px;
 
 }
+.logo{
+  align-items: center;
+}
 .nav-img{
   width: 65px;
   height: 65px;
@@ -65,16 +72,21 @@
   font-size: 2rem;
   margin-left: 10px;
   
+  
 }
 
 /* Banner */
 .banner-container{
   margin: 12px;
   align-items: center;
+  justify-content: space-between;
   gap:50px;
+  
 }
+
+
 .banner-title{
-  width: 640px;
+  
   font-weight: 800px;
   font-size: 56px;
 }
@@ -83,11 +95,20 @@
   font-size: 1.25rem;
 
 }
+.banner-img{
+  width: 40%;
+}
+
 .enroll-btn{
   background-color: black;
 }
+/* Hero Section */
+.hero-section{
+  background-image: url(./../assets/bg.png);
 
+}
 /* Standerd Curriculum */
+
 .curriculam-title{
   font-weight: bold;
   font-size:2.88rem;
@@ -98,18 +119,21 @@
 }
 .card-1{
   background-image: linear-gradient(to top,  #FFFFFF ,#def5ff7b);
+  border: 1px solid #DEF5FF;
 }
 .card-2{
-  background-image: linear-gradient(to top,  #FFFFFF ,#f7e7f795);
+  background-image: linear-gradient(to top,  #FFFFFF ,#f7e7f7d9);
+  border: 1px solid #FFF4DC;
 }
 .card-3{
-  background-image: linear-gradient(to top,  #FFFFFF ,#f2e8ff9d);
+  background-image: linear-gradient(to top,  #FFFFFF ,#f2e8ffe0);
+  border: 1px solid #F2E8FF;
 }
 .card-item{
 
   text-align: center;
   padding: 40px 40px;
-  border: 1px solid #FFFFFF ;
+  
   border-radius: 19px;
   box-shadow: 0 8px 16px  rgba(0, 0, 0, 0.05);
   margin-right: 29px;
@@ -131,4 +155,10 @@
 }
 .btn-3{
   color: #8700FF;
+}
+
+
+@media screen  and (max-width:576px ){
+
+  
 }
