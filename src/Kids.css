@@ -1,8 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.quicksand-font> {
+.quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
+  .orenge{
+    color: #FEA301;
+  }
+  .skyblue{
+    color: skyblue;
+  }
+.color-facility{
+  color:#05D4DF;
+}
+.color-admission{
+  color:#5D58EF;
+}
+.contact-btn{
+  background-color: #FEA301;
+}
+.btn-primary{
+  
+  color: #FFFFFF;
+  border-style: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 10px 60px;
+}
+  .display-flex{
+    display: flex;
+  }
+
+  .main-container{
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+/* NaVbar */
+  .navbar{
+    justify-content: center;
+    align-items: center;
+  }
+.navitems{
+    list-style: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    
+}
+.nav-link{
+    text-decoration: none;
+    margin: 0 186px;
+    gap: 32px;
+
+}
+.nav-img{
+  width: 65px;
+  height: 65px;
+}
+.nav-title{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 10px;
+  
+}
+
+/* Banner */
+.banner-container{
+  margin: 12px;
+  align-items: center;
+  gap:50px;
+}
+.banner-title{
+  width: 640px;
+  font-weight: 800px;
+  font-size: 56px;
+}
+.banner-description{
+  font-weight: 300px;
+  font-size: 1.25rem;
+
+}
+.enroll-btn{
+  background-color: black;
+}
+
+/* Standerd Curriculum */
+.curriculam-title{
+  font-weight: bold;
+  font-size:2.88rem;
+  margin-top:60px ;
+  margin-bottom: 80px;
+  text-align: center;
+
+}
+.card-1{
+  background-image: linear-gradient(to top,  #FFFFFF ,#def5ff7b);
+}
+.card-2{
+  background-image: linear-gradient(to top,  #FFFFFF ,#f7e7f795);
+}
+.card-3{
+  background-image: linear-gradient(to top,  #FFFFFF ,#f2e8ff9d);
+}
+.card-item{
+
+  text-align: center;
+  padding: 40px 40px;
+  border: 1px solid #FFFFFF ;
+  border-radius: 19px;
+  box-shadow: 0 8px 16px  rgba(0, 0, 0, 0.05);
+  margin-right: 29px;
+  
+}
+.read-more-btn{
+  margin-top: 25px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+
+}
+.btn-1{
+  color: #64C8FF;
+}
+.btn-2
+{
+  color: #F0AA00;
+}
+.btn-3{
+  color: #8700FF;
+}
