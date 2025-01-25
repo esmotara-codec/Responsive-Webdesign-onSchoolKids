@@ -85,14 +85,14 @@
 }
 
 .banner{
-  margin-right: 180px;
+  
   align-items: center;
   width: 640px;
 }
 .banner-title{
   
   font-weight: 800px;
-  font-size: 56px;
+  font-size: 3.5rem;
 }
 .banner-description{
   font-weight: 300px;
@@ -101,6 +101,7 @@
 }
 .banner-img{
   width: 40%;
+ 
 }
 
 .enroll-btn{
@@ -140,7 +141,7 @@
   
   border-radius: 19px;
   box-shadow: 0 8px 16px  rgba(0, 0, 0, 0.05);
-  margin-right: 29px;
+  margin-right: 30px;
   
 }
 .read-more-btn{
@@ -161,8 +162,60 @@
   color: #8700FF;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
 
-@media screen  and (max-width:576px){
+.menu-icon i {
+  font-size: 30px;
+  color: #333;
+}
+/* @media screen  and (max-width:576px){
 
   
+} */
+
+/* Responsive navbar for screens <= 768px */
+@media (max-width: 768px) {
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-link li {
+    color: white;
+    padding: 15px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon.active + .nav-link {
+    display: flex;
+  }
+
+  .nav-button {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-img {
+    width: 50px;
+    height: 50px;
+  }
 }
