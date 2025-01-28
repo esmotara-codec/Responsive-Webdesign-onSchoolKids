@@ -62,7 +62,7 @@
 .navbar{
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px 0px;
     background-color: #FFF;
     position: relative;
   }
@@ -390,9 +390,12 @@ ul{
   
   color: black;
 }
-
+hr{
+  display: none;
+}
 @media screen and (min-width:360px) and (max-width: 1024px) {
  
+  
   .nav-link {
     display: none;
     flex-direction: column;
@@ -428,6 +431,10 @@ ul{
 
   .nav-button {
     display: none;
+  }
+  hr{
+    display: block;
+    background-color: #FEA301;
   }
   .banner-container{
     display: flex;
