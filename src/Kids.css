@@ -42,6 +42,7 @@
   font-weight: 600;
   padding: 10px 60px;
   font-size: 1.25rem;
+  cursor: pointer;
   
 }
   .display-flex{
@@ -125,14 +126,10 @@
   
 }
 /* Hero Section */
-.hero-section{
-  
-  /* background-image: linear-gradient(to top, #fea101be 40% ,#ffffff 100%),
-  url(./../assets/bg.png) no-repeat; */
-  
-  background-image:  url(./../assets/bg.png), linear-gradient(to bottom,  #FFFFFF 45% , rgba(254, 161, 1, 0.232) 50% ) ;
- 
+.hero-section{ 
+  background-image:  url(./../assets/bg.png), linear-gradient(to bottom,  #FFFFFF 45% , rgba(254, 161, 1, 0.232) 50% ) ; 
 }
+
 .remain-contianer{
   max-width: 1500px;
   margin: 0 auto;
@@ -186,17 +183,7 @@
   color: #8700FF;
 }
 
-.menu-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  margin: 20px 20px;
-}
 
-.menu-icon i {
-  font-size: 30px;
-  color: black;
-}
 .arrow-key{
   display: flex;
   margin: 80px auto ;
@@ -360,7 +347,7 @@ ul{
 
 .about-title{
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 .keep-title{
   font-weight: 800;
@@ -371,8 +358,8 @@ ul{
  }
  
  .footer-link-itemli{
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-weight: 400;
+  font-size: 1.5rem;
  
  }
  .footer-link-itemli a{
@@ -387,11 +374,20 @@ ul{
   height: 50px;
 }
 
-@media screen and  (max-width: 1024px) {
-  .navbar{
-    padding: 0 20px;
-  }
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+ 
+}
 
+.menu-icon i {
+  
+  color: black;
+}
+
+@media screen and  (max-width: 1024px) {
+ 
   .nav-link {
     display: none;
     flex-direction: column;
@@ -404,13 +400,25 @@ ul{
     text-align: center;
   }
 
+  .nav-link ul{
+    flex-direction: column;
+  }
+
   .nav-link li {
     color: white;
     padding: 15px 0;
   }
 
-  .menu-icon  {
+  .menu-icon {
     display: block;
+  }
+  .menu-icon i {
+    
+    color: black;
+  }
+
+  .menu-icon.active + .nav-link {
+    display: flex;
   }
 
   .nav-button {
@@ -504,11 +512,38 @@ ul{
  
 }
 
-@media screen and (max-width: 576px) {
-  .menu-icon{
+@media screen and (min-width: 360px) and (max-width: 576px) {
+   
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-link ul{
+    flex-direction: column;
+  }
+
+  .nav-link li {
+    color: white;
+    padding: 15px 0;
+  }
+
+  .menu-icon {
     display: block;
   }
-  .nav-link.active{
+
+  .nav-button {
+    display: none;
+  }
+
+  .menu-icon.active + .nav-link {
     display: flex;
   }
   .nav-title {
@@ -518,6 +553,9 @@ ul{
   .nav-img {
     width: 50px;
     height: 50px;
+  }
+  .nav-button{
+    display:none;
   }
   .menu-icon {
     display: flex;
