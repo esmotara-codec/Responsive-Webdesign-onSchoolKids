@@ -50,7 +50,7 @@
   }
 
   .main-container{
-    max-width: 1500px;
+    max-width: 1250px;
     margin: 0 auto;
   }
 
@@ -131,7 +131,7 @@
 }
 
 .remain-contianer{
-  max-width: 1500px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 /* Standerd Curriculum */
@@ -198,11 +198,16 @@
     background-color: #F0AA00;
     padding: 10px 20px ;
     border-radius: 100%;
+    border: none;
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
     margin: 10px;
     transition: background 0.3 ease ;
 
+}
+.arrow-btn:hover{
+  background-color: #333;
 }
 .card-stories{
   display: grid;
@@ -232,28 +237,28 @@
 }
 .story-title
 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   align-items: center;
 }
 .first-card{
-  margin: 30px 100px 50px 45px ;
+  margin: 25px 90px 50px 50px ;
   
 }
 .first-card-des{
 
-  padding-bottom: 38px;
+  padding-bottom: 15px;
   font-size: 1.25rem;
   
 }
 .story-img{
-  width: 800px;
-  height: 350px;
+  width: 550px;
+  height: 320px;
    
 }
 .story-img-2{
-  width: 350px;
-  height: 200px;
+  width: 300px;
+  height: 180px;
 }
 .date-btn-1{
   margin-top: -150px;
@@ -268,11 +273,11 @@
 }
 .date-btn{
   margin-top: -65px;
-  margin-bottom:40px ;
-  margin-left:40px; 
+  margin-bottom:35px ;
+  margin-left:36px; 
   border: 1px solid  ;
   border-style: none;
-  padding: 18px 30px;
+  padding: 15px 29px;
   border-radius: 50px;
   color: #FFFFFF;
  
@@ -296,7 +301,7 @@
 
 }
 .footer-contain{
-  padding: 110px 228px 190px 270px;
+  padding: 110px 200px 190px 150px;
   justify-content: space-between;
   align-items: center;
   background-color: #01ACFD;
@@ -307,7 +312,7 @@
 .footer-item{
    /* justify-content: space-between; */
   align-items: flex-start;
-  gap:400px;
+  gap:150px;
   width: 100%;
 
 }
@@ -318,13 +323,13 @@
 }
 .footer-title{
   font-weight: 800;
-  font-size: 46px;
+  font-size: 40px;
 
 }
 .footer-des{
   font-weight: 300;
-  font-size: 2rem;
-  max-width: 800px;
+  font-size: 1.5rem;
+  max-width: 500px;
   
 }
 
@@ -386,7 +391,7 @@ ul{
   color: black;
 }
 
-@media screen and  (max-width: 1024px) {
+@media screen and (min-width:360px) and (max-width: 1024px) {
  
   .nav-link {
     display: none;
