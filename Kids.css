@@ -127,7 +127,7 @@
 }
 /* Hero Section */
 .hero-section{ 
-  background-image:  url(./../assets/bg.png), linear-gradient(to bottom,  #FFFFFF 45% , rgba(254, 161, 1, 0.232) 50% ) ; 
+  background-image:  url(./assets/bg.png), linear-gradient(to bottom,  #FFFFFF 45% , rgba(254, 161, 1, 0.232) 50% ) ; 
 }
 
 .remain-contianer{
